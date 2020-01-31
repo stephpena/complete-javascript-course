@@ -382,3 +382,10 @@ console.log(whatDoYouDo('retired','Mark'))
 /******************************************
 * Arrays
 */
+// arrarys are 0 based
+
+ var names = ['Jake','Steph','Raquel'];
+ var years = new Array(1986,1991,1989);
+
+console.log(names[0]);
+console.log(names.length);
