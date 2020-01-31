@@ -353,3 +353,32 @@ yearsUntilRetirement(1953, 'Steph');
 /******************************************
 * Function statements & expressions
 */
+/*
+// Function declaration
+// function (job, firstName) {}
+
+// Function expression
+var whatDoYouDo = function (job, firstName) {
+    switch(job) {
+        case 'teacher':
+            return firstName + ' teaches elementary';
+        case 'driver' :
+            return firstName + ' drives for lyft';
+        case 'analyst' :
+            return firstName + ' is an analyst';
+        default :
+            return firstName + ' does something else';
+    }
+}
+
+console.log(whatDoYouDo('teacher','John'))
+console.log(whatDoYouDo('analyst','Steph'))
+console.log(whatDoYouDo('retired','Mark'))
+
+// expressions: pieces of code that always produces a single value
+// statements: just perform actions and does not produce immediate results. ex: if/else, while loop, and function declaration
+*/
+
+/******************************************
+* Arrays
+*/
