@@ -460,3 +460,114 @@ var billsFinal = [bills[0] + tips[0],
 
 console.log(tips,billsFinal);
 */
+
+/*****************************
+* Objects and properties
+*/
+
+/*
+// Object literal
+var steph = {
+    firstName : 'Steph',
+    lastName : 'Peña',
+    birthYear : 1991,
+    family : ['Isidro','Justa','Chris','David'],
+    job : 'BI Engineer',
+    isMarried : false
+};
+console.log(steph.firstName);
+console.log(steph['lastName']);
+var x = 'birthYear';
+console.log(steph[x]);
+
+// Mutate Objects
+steph.job = 'Business Intelligence Engineer';
+steph['isMarried'] = true;
+console.log(steph);
+
+// new Object syntax
+var jessica = new Object();
+jessica.firstName = 'Jessica';
+jessica.birthYear = 1991;
+jessica['lastName'] = 'Staire';
+console.log(jessica);
+*/
+
+
+
+/*****************************
+* Objects and methods
+*/
+
+// function expression attached to objects are called methods
+/*
+var currentYear = new Date().getFullYear()
+var steph = {
+    firstName : 'Steph',
+    lastName : 'Peña',
+    birthYear : 1991,
+    family : ['Isidro','Justa','Chris','David'],
+    job : 'BI Engineer',
+    isMarried : false,
+    calcAge : function() {
+        this.age = currentYear - this.birthYear;
+    }
+};
+
+steph.calcAge();
+console.log(steph);
+*/
+
+
+/*****************************
+* CODING CHALLENGE 4
+*/
+
+/*
+Let's remember the first coding challenge where Mark and John compared their BMIs. Let's now implement the same functionality with objects and methods.
+1. For each of them, create an object with properties for their full name, mass, and height
+2. Then, add a method to each object to calculate the BMI. Save the BMI to the object and also return it from the method.
+3. In the end, log to the console who has the highest BMI, together with the full name and the respective BMI. Don't forget they might have the same BMI.
+
+Remember: BMI = mass / height^2 = mass / (height * height). (mass in kg and height in meter).
+
+GOOD LUCK 😀
+*/
+
+/*
+var mark = {
+    fullName : 'Mark Smith',
+    mass : 78,
+    height : 1.69,
+    calcBmi : function() {
+        this.bmi = this.mass / Math.pow(this.height, 2);
+        return this.bmi;
+    }
+}
+
+var john = {
+    fullName : 'John Doe',
+    mass : 110,
+    height : 1.95,
+    calcBmi : function() {
+        this.bmi = this.mass / Math.pow(this.height, 2);
+        return this.bmi;
+    }
+}
+
+// mark.calcBmi();
+// john.calcBmi();
+// console.log(mark, john);
+
+var higherBmi = function(mark, john) {
+    if (mark.calcBmi() > john.calcBmi()) {
+        return mark.fullName + ' has a higher BMI: ' + mark.bmi;
+    } else if (john.calcBmi() > mark.calcBmi()) {
+        return john.fullName + ' has a higher BMI: ' + john.bmi;
+    } else {
+        return 'Both ' + mark.fullName + ' and ' + john.fullName + ' have the same BMI: ' + mark.bmi;
+    }
+}
+
+console.log(higherBmi(mark,john))
+*/
