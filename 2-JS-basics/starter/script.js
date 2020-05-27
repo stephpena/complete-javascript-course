@@ -571,3 +571,45 @@ var higherBmi = function(mark, john) {
 
 console.log(higherBmi(mark,john))
 */
+
+
+/*****************************
+* Loops and iteration
+*/
+
+/*
+// For loop
+for (var i = 1; i <= 20; i += 2) {
+    console.log(i);
+}
+
+var steph = ['Steph', 'Peña', 1991, 'BI Engineer',false];
+for (var i = 0; i < steph.length; i++) {
+    console.log(steph[i]);
+}
+
+// While loop
+var i = 0;
+while (i < steph.length) {
+    console.log(steph[i]);
+    i++;
+}
+
+//  Continue and Break Statements
+var steph = ['Steph', 'Peña', 1991, 'BI Engineer',false];
+for (var i = 0; i < steph.length; i++) {
+    if (typeof steph[i] !== 'string') continue;
+    console.log(steph[i]);
+}
+
+for (var i = 0; i < steph.length; i++) {
+    if (typeof steph[i] !== 'string') break;
+    console.log(steph[i]);
+}
+
+// Looping backwards
+var steph = ['Steph', 'Peña', 1991, 'BI Engineer',false];
+for (var i = steph.length - 1; i >= 0 ; i--) {
+    console.log(steph[i]);
+}
+*/
